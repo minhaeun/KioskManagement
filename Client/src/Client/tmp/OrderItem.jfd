@@ -1,0 +1,62 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_name"
+				"text": "아메리카노"
+				"font": new java.awt.Font( "맑은 고딕", 0, 20 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 10
+				"width": 335
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_temperature"
+				"text": "HOT"
+				"font": &Font0 new java.awt.Font( "맑은 고딕", 0, 14 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 125
+				"y": 85
+				"width": 50
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_option"
+				"text": "샷추가"
+				"font": new java.awt.Font( "맑은 고딕", 0, 14 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 45
+				"width": 335
+				"height": 35
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_price"
+				"text": "2,000원"
+				"font": #Font0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 90
+				"x": 240
+				"y": 85
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_amount"
+				"text": "1개"
+				"font": #Font0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 70
+				"height": 27
+				"x": 10
+				"y": 80
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 350, 115 )
+		} )
+	}
+}

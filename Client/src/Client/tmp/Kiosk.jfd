@@ -1,0 +1,904 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"focusable": false
+			"$sizePolicy": 1
+			"resizable": false
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "manager"
+				"visible": false
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+					"autoSize": false
+				} ) {
+					name: "panel_managerLogin"
+					"font": new java.awt.Font( "맑은 고딕", 1, 30 )
+					"visible": false
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label_password"
+						"text": "관리자 비밀번호"
+						"horizontalAlignment": 0
+						"font": new java.awt.Font( "맑은 고딕", 1, 36 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 60
+						"y": 50
+						"width": 295
+					} )
+					add( new FormComponent( "javax.swing.JPasswordField" ) {
+						name: "passwordField1"
+						"font": new java.awt.Font( "Monospaced", 1, 22 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 65
+						"y": 130
+						"width": 275
+						"height": 40
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button_OK"
+						"text": "확인"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button_OKMouseClicked", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 145
+						"y": 200
+						"width": 123
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 430
+					"height": 260
+					"y": 210
+					"x": 395
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "panel_managerMenu"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "관리자 메뉴"
+						"font": new java.awt.Font( "맑은 고딕", 1, 36 )
+						"horizontalAlignment": 0
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 60
+						"y": 25
+						"width": 215
+						"height": 60
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button_log"
+						"text": "매출 현황"
+						"font": new java.awt.Font( "맑은 고딕", 0, 24 )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button_logMouseClicked", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 65
+						"y": 115
+						"width": 200
+						"height": 60
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button_closeUp"
+						"text": "업무 마감"
+						"font": new java.awt.Font( "맑은 고딕", 0, 24 )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button_closeUpMouseClicked", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 200
+						"height": 60
+						"x": 65
+						"y": 295
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button_showMenu"
+						"text": "고객판매"
+						"font": new java.awt.Font( "맑은 고딕", 0, 24 )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button3MouseClicked", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 200
+						"height": 60
+						"x": 65
+						"y": 385
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button_menuManagement"
+						"text": "메뉴 관리"
+						"font": new java.awt.Font( "맑은 고딕", 0, 24 )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button_menuManagementMouseClicked", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 200
+						"height": 60
+						"x": 65
+						"y": 480
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button_start"
+						"text": "업무 개시"
+						"font": new java.awt.Font( "맑은 고딕", 0, 24 )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button_startMouseClicked", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 65
+						"y": 205
+						"width": 200
+						"height": 60
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button_kioskmanagement"
+						"text": "키오스크 관리"
+						"font": new java.awt.Font( "맑은 고딕", 0, 24 )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button_kioskmanagementMouseClicked", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 65
+						"y": 580
+						"width": 200
+						"height": 60
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 330
+					"height": 670
+					"x": 45
+					"y": 15
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+					"autoSize": false
+				} ) {
+					name: "panel_payment"
+					"visible": false
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane_payment"
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "table_payment"
+							"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+								add( "no" )
+								add( "카드번호" )
+								add( "가격" )
+								add( "결제시간" )
+								add( "취소시간" )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							}, new java.util.Vector {
+								add( false )
+								add( false )
+								add( false )
+								add( false )
+								add( false )
+							}, new java.util.Vector {
+								add( new com.jformdesigner.model.SwingTableColumn( null, 80, 0, 0, true ) )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							} )
+							"autoCreateColumnsFromModel": false
+							"rowSelectionAllowed": false
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 0
+						"y": 100
+						"width": 800
+						"height": 575
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button_paymentcancel"
+						"text": "결제취소"
+						"font": new java.awt.Font( "맑은 고딕", 0, 18 )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button_paymentcancelMouseClicked", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 650
+						"y": 50
+						"width": 127
+						"height": 30
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 800
+					"height": 670
+					"x": 495
+					"y": 10
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane_menuManagement"
+					"visible": false
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+						"autoSize": false
+					} ) {
+						name: "panel_menuManagement"
+						"visible": false
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 495
+					"y": 10
+					"width": 800
+					"height": 670
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "panel_closeUp"
+					"visible": false
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button_end"
+						"text": "PC종료"
+						"font": &Font0 new java.awt.Font( "맑은 고딕", 0, 20 )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button_endMouseClicked", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 465
+						"y": 590
+						"width": 148
+						"height": 50
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button_realCloseUp"
+						"text": "업무마감"
+						"font": #Font0
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button_realCloseUpMouseClicked", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 230
+						"y": 590
+						"width": 157
+						"height": 50
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+						"text": "1. 총 매출액 : "
+						"font": &Font1 new java.awt.Font( "맑은 고딕", 0, 18 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 185
+						"y": 125
+						"width": 200
+						"height": 40
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label10"
+						"text": "마감전표"
+						"font": new java.awt.Font( "맑은 고딕", 0, 26 )
+						"horizontalAlignment": 0
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 275
+						"y": 10
+						"width": 270
+						"height": 105
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label_total"
+						"text": "100000"
+						"font": #Font1
+						"horizontalAlignment": 4
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 200
+						"height": 40
+						"x": 435
+						"y": 125
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label_cancel"
+						"text": "100000"
+						"font": #Font1
+						"horizontalAlignment": 4
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 200
+						"height": 40
+						"x": 435
+						"y": 210
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label6"
+						"text": "2. 취소 매출 : "
+						"font": #Font1
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 200
+						"height": 40
+						"x": 185
+						"y": 210
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label_real"
+						"text": "100000"
+						"font": #Font1
+						"horizontalAlignment": 4
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 200
+						"height": 40
+						"x": 435
+						"y": 295
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label7"
+						"text": "3. 실 매출액 : "
+						"font": #Font1
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 200
+						"height": 40
+						"x": 185
+						"y": 295
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label_paymentCount"
+						"text": "100000"
+						"font": #Font1
+						"horizontalAlignment": 4
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 200
+						"height": 40
+						"x": 435
+						"y": 380
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label8"
+						"text": "4. 주문 건수 : "
+						"font": #Font1
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 200
+						"height": 40
+						"x": 185
+						"y": 380
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label_cancelCount"
+						"text": "100000"
+						"font": #Font1
+						"horizontalAlignment": 4
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 200
+						"height": 40
+						"x": 435
+						"y": 460
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label9"
+						"text": "5. 취소 건수 : "
+						"font": #Font1
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 200
+						"height": 40
+						"x": 185
+						"y": 460
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 495
+					"y": 10
+					"height": 670
+					"width": 800
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "panel_kioskmanagement"
+					"visible": false
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label_newpassword"
+						"text": "새 비밀번호 : "
+						"font": &Font2 new java.awt.Font( "맑은 고딕", 0, 20 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 95
+						"y": 110
+						"width": 150
+						"height": 120
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label_check"
+						"text": "비밀번호 확인 : "
+						"font": #Font2
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 160
+						"height": 120
+						"x": 95
+						"y": 245
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button_change"
+						"text": "비밀번호 변경"
+						"font": new java.awt.Font( "맑은 고딕", 0, 20 )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button_changeMouseClicked", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 260
+						"y": 455
+						"width": 215
+						"height": 70
+					} )
+					add( new FormComponent( "javax.swing.JPasswordField" ) {
+						name: "passwordField_newpassword"
+						"text": "1234"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 330
+						"y": 160
+						"width": 245
+					} )
+					add( new FormComponent( "javax.swing.JPasswordField" ) {
+						name: "passwordField_check"
+						"text": "1234"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 245
+						"height": 30
+						"x": 330
+						"y": 290
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 495
+					"y": 10
+					"height": 670
+					"width": 800
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 1285
+				"height": 700
+				"x": 40
+				"y": 10
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "showMenu"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "panel_menuDetails"
+					"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, true )
+					"visible": false
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "radioButton_hot"
+						"text": " HOT"
+						"font": new java.awt.Font( "맑은 고딕", 0, 24 )
+						"selected": true
+						"$buttonGroup": new FormReference( "buttonGroup1" )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 250
+						"y": 225
+						"width": 95
+						"height": 40
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "radioButton_ice"
+						"text": " ICE"
+						"font": new java.awt.Font( "맑은 고딕", 0, 24 )
+						"$buttonGroup": new FormReference( "buttonGroup1" )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 85
+						"height": 40
+						"x": 350
+						"y": 230
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label_hot_ice"
+						"text": "HOT/ICE"
+						"font": new java.awt.Font( "맑은 고딕", 0, 26 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 35
+						"y": 230
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label_amount"
+						"text": "수량"
+						"font": new java.awt.Font( "맑은 고딕", 0, 26 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 65
+						"y": 300
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner_amount"
+						"model": new javax.swing.SpinnerNumberModel {
+							minimum: 1
+							value: 1
+						}
+						"font": new java.awt.Font( "맑은 고딕", 0, 24 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 250
+						"y": 295
+						"width": 125
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button_finish"
+						"text": "메뉴 담기"
+						"font": &Font3 new java.awt.Font( "맑은 고딕", 0, 26 )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button_finishMouseClicked", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 275
+						"y": 550
+						"width": 170
+						"height": 60
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label_option"
+						"text": "옵션"
+						"font": new java.awt.Font( "맑은 고딕", 0, 26 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 65
+						"y": 370
+						"height": 55
+						"width": 118
+					} )
+					add( new FormComponent( "javax.swing.JCheckBox" ) {
+						name: "checkBox_addshot"
+						"text": " 샷추가(+400)"
+						"font": &Font4 new java.awt.Font( "맑은 고딕", 0, 18 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 235
+						"y": 385
+						"width": 175
+					} )
+					add( new FormComponent( "javax.swing.JCheckBox" ) {
+						name: "checkBox_addsysrup"
+						"text": " 시럽추가(+500)"
+						"font": #Font4
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 205
+						"height": 55
+						"x": 235
+						"y": 420
+					} )
+					add( new FormComponent( "javax.swing.JCheckBox" ) {
+						name: "checkBox_addbubble"
+						"text": " 버블추가(+600)"
+						"font": #Font4
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 220
+						"height": 65
+						"x": 235
+						"y": 465
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button_cancel"
+						"text": "취소"
+						"font": #Font3
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button_cancelMouseClicked", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 170
+						"height": 60
+						"x": 50
+						"y": 550
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label_image"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 90
+						"y": 40
+						"width": 110
+						"height": 155
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label_name"
+						"text": "이름"
+						"font": &Font5 new java.awt.Font( "맑은 고딕", 0, 20 )
+						"horizontalAlignment": 0
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 240
+						"y": 70
+						"width": 165
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label_price"
+						"text": "가격"
+						"font": #Font5
+						"horizontalAlignment": 0
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 240
+						"y": 115
+						"width": 165
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 475
+					"height": 645
+					"x": 795
+					"y": 45
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+					"autoSize": false
+				} ) {
+					name: "panel_showPayment"
+					"visible": false
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": "카드번호를 입력하세요"
+						"font": new java.awt.Font( "맑은 고딕", 1, 20 )
+						"horizontalAlignment": 0
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 60
+						"y": 210
+						"width": 260
+						"height": 60
+					} )
+					add( new FormComponent( "javax.swing.JFormattedTextField" ) {
+						name: "textField_cardnum"
+						"navigationFilter": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 95
+						"y": 330
+						"width": 185
+						"height": 35
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button_pay2"
+						"text": "결제"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button_pay2MouseClicked", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 215
+						"y": 415
+						"width": 115
+						"height": 45
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": "총 금액 : "
+						"font": new java.awt.Font( "맑은 고딕", 1, 20 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 40
+						"y": 115
+						"width": 115
+						"height": 55
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label_totalPrice"
+						"text": "1000"
+						"font": &Font6 new java.awt.Font( "맑은 고딕", 1, 20 )
+						"horizontalAlignment": 4
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 135
+						"y": 125
+						"width": 130
+						"height": 35
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button_back"
+						"text": "취소"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button_backMouseClicked", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 115
+						"height": 45
+						"x": 60
+						"y": 415
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label_totalPrice2"
+						"text": " 원"
+						"font": #Font6
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 65
+						"height": 35
+						"x": 265
+						"y": 125
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 370
+					"height": 615
+					"x": 825
+					"y": 60
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane_coffee"
+					"verticalScrollBarPolicy": 22
+					"autoscrolls": true
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+						name: "panel_menu_coffee"
+						"autoscrolls": true
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 5
+					"y": 150
+					"width": 765
+					"height": 540
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane_order"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+						name: "panel_order"
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 825
+					"y": 150
+					"width": 390
+					"height": 355
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button_pay"
+					"text": "결제"
+					"font": new java.awt.Font( "맑은 고딕", 1, 30 )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button_payMouseClicked", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 1020
+					"y": 585
+					"width": 178
+					"height": 70
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button_delete"
+					"text": "삭제"
+					"font": new java.awt.Font( "맑은 고딕", 1, 30 )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button_deleteMouseClicked", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 178
+					"height": 70
+					"x": 825
+					"y": 585
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "주문내역"
+					"horizontalAlignment": 0
+					"font": new java.awt.Font( "맑은 고딕", 1, 30 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 915
+					"y": 75
+					"width": 195
+					"height": 35
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+					"autoSize": false
+				} ) {
+					name: "panel_category"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button_COFFEE"
+						"text": "COFFEE"
+						"font": &Font7 new java.awt.Font( "맑은 고딕", 0, 26 )
+						"background": &Color0 new java.awt.Color( 204, 204, 204, 255 )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button_COFFEEMouseClicked", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 10
+						"y": 20
+						"width": 155
+						"height": 70
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button_BEVERAGE"
+						"text": "BEVERAGE"
+						"font": #Font7
+						"background": #Color0
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button_BEVERAGEMouseClicked", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 155
+						"height": 70
+						"x": 220
+						"y": 20
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button_ADE"
+						"text": "ADE"
+						"font": #Font7
+						"background": #Color0
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button_ADEMouseClicked", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 155
+						"height": 70
+						"x": 420
+						"y": 20
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button_BUBBLE"
+						"text": "BUBBLE"
+						"font": #Font7
+						"background": #Color0
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button_BUBBLEMouseClicked", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 155
+						"height": 70
+						"x": 620
+						"y": 20
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 778
+					"height": 103
+					"x": -5
+					"y": 20
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane_beverage"
+					"visible": false
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+						name: "panel_menu_beverage"
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 765
+					"height": 530
+					"x": 5
+					"y": 150
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane_ade"
+					"visible": false
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+						name: "panel_menu_ade"
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 765
+					"height": 530
+					"x": 5
+					"y": 150
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane_bubble"
+					"visible": false
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+						name: "panel_menu_bubble"
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 765
+					"height": 530
+					"x": 5
+					"y": 150
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label_gomanager"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "label_gomanagerMouseClicked", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 1195
+					"y": 5
+					"width": 80
+					"height": 50
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+					"autoSize": false
+				} ) {
+					name: "panel_paymentComplete"
+					"visible": false
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label_complete"
+						"text": "결제가 완료되었습니다."
+						"font": new java.awt.Font( "맑은 고딕", 0, 30 )
+						"horizontalAlignment": 0
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 5
+						"y": 185
+						"width": 415
+						"height": 60
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button_close"
+						"text": "닫기"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button_closeMouseClicked", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 170
+						"y": 290
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 425
+					"height": 605
+					"x": 795
+					"y": 65
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 1285
+				"height": 700
+				"x": 40
+				"y": 10
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel_systemcheck"
+				"visible": false
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label11"
+					"text": "시스템 점검중"
+					"font": new java.awt.Font( "맑은 고딕", 0, 36 )
+					"horizontalAlignment": 0
+					"background": new java.awt.Color( 255, 255, 255, 255 )
+					"foreground": new java.awt.Color( 255, 51, 51, 255 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 500
+					"width": 245
+					"height": 90
+					"y": 300
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label_gomanager2"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "label_gomanagerMouseClicked", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"height": 50
+					"x": 1195
+					"y": 10
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 1285
+				"height": 700
+				"x": 40
+				"y": 10
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1330, 750 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "buttonGroup1"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 766 )
+		} )
+	}
+}

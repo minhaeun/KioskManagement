@@ -1,0 +1,21 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "ManagerPanel"
+			add( new FormComponent( "Client.GUI.ManagerLogin" ) {
+				name: "managerLogin1"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 15
+				"y": 10
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1230, 690 )
+		} )
+	}
+}

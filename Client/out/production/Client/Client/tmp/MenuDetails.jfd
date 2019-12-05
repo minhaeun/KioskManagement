@@ -1,0 +1,128 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "panel_menuDetails"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "MenuItem"
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 145
+				"y": 25
+				"width": 220
+				"height": 165
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioButton1"
+				"text": "ice"
+				"$buttonGroup": new FormReference( "buttonGroup1" )
+				"font": new java.awt.Font( "맑은 고딕", 0, 24 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 250
+				"y": 260
+				"width": 95
+				"height": 40
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioButton2"
+				"text": "hot"
+				"$buttonGroup": new FormReference( "buttonGroup1" )
+				"font": new java.awt.Font( "맑은 고딕", 0, 24 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 85
+				"height": 40
+				"x": 390
+				"y": 260
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "temperature"
+				"font": new java.awt.Font( "맑은 고딕", 0, 26 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 25
+				"y": 255
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "amount"
+				"font": new java.awt.Font( "맑은 고딕", 0, 26 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 45
+				"y": 350
+			} )
+			add( new FormComponent( "javax.swing.JSpinner" ) {
+				name: "spinner1"
+				"model": new javax.swing.SpinnerNumberModel {
+					minimum: 1
+					value: 1
+				}
+				"font": new java.awt.Font( "맑은 고딕", 0, 24 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 250
+				"y": 355
+				"width": 125
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "메뉴 담기"
+				"font": new java.awt.Font( "맑은 고딕", 0, 26 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 165
+				"y": 665
+				"width": 170
+				"height": 60
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "option"
+				"font": new java.awt.Font( "맑은 고딕", 0, 26 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 40
+				"y": 440
+				"height": 55
+				"width": 118
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "checkBox1"
+				"text": "샷추가"
+				"font": &Font0 new java.awt.Font( "맑은 고딕", 0, 22 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 255
+				"y": 460
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "checkBox2"
+				"text": "시럽추가"
+				"font": #Font0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 130
+				"height": 55
+				"x": 255
+				"y": 500
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "checkBox3"
+				"text": "버블추가"
+				"font": #Font0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 125
+				"height": 65
+				"x": 255
+				"y": 555
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 10, 10 )
+			"size": new java.awt.Dimension( 540, 775 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "buttonGroup1"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 680, 415 )
+		} )
+	}
+}

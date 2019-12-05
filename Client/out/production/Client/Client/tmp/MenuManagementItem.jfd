@@ -1,0 +1,54 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_menuname"
+				"text": "메뉴명"
+				"font": new java.awt.Font( "맑은 고딕", 0, 28 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 40
+				"width": 280
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioButton_active"
+				"text": "사용"
+				"font": new java.awt.Font( "맑은 고딕", 0, 28 )
+				"$buttonGroup": new FormReference( "buttonGroup2" )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "radioButton_activeMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 310
+				"y": 30
+				"width": 190
+				"height": 55
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioButton_deactive"
+				"text": "미사용"
+				"font": new java.awt.Font( "맑은 고딕", 0, 28 )
+				"$buttonGroup": new FormReference( "buttonGroup2" )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "radioButton_deactiveMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 190
+				"height": 55
+				"x": 520
+				"y": 30
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 10 )
+			"size": new java.awt.Dimension( 700, 110 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "buttonGroup2"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 20, 145 )
+		} )
+	}
+}
